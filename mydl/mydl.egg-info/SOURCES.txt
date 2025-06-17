@@ -1,0 +1,8 @@
+setup.py
+mydl/__init__.py
+mydl/nlp.py
+mydl.egg-info/PKG-INFO
+mydl.egg-info/SOURCES.txt
+mydl.egg-info/dependency_links.txt
+mydl.egg-info/requires.txt
+mydl.egg-info/top_level.txt

@@ -1,0 +1,49 @@
+# -------------------------------------------------------------
+# 1. 操作系统和IDE生成的文件 (Operating System and IDE Files)
+# -------------------------------------------------------------
+.DS_Store                # macOS 文件夹元数据
+Thumbs.db                # Windows 缩略图缓存
+.idea/                   # JetBrains IDEs (IntelliJ, PyCharm, WebStorm)
+.vscode/                 # VS Code 配置文件
+*.swp                    # Vim 临时文件
+*~                       # Emacs 备份文件
+*.log                    # 日志文件
+*.temp                   # 临时文件
+*.tmp                    # 临时文件
+
+# -------------------------------------------------------------
+# 2. Python / PyTorch 相关 (Python / PyTorch Specific)
+# -------------------------------------------------------------
+__pycache__/             # Python 字节码缓存目录
+*.pyc                    # Python 字节码文件
+.Python                  # Python 虚拟环境目录 (Windows)
+venv/                    # 虚拟环境目录 (通常命名为 venv 或 env)
+env/                     # 另一个常见的虚拟环境目录名
+*.egg-info/              # Python 包的元数据目录
+build/                   # Python 包的构建目录
+dist/                    # Python 包的发布目录
+.pytest_cache/           # pytest 缓存
+.ipynb_checkpoints/      # Jupyter Notebook 自动保存的检查点 (非常常见且重要!)
+*.pth                    # PyTorch 模型保存文件 (通常很大，不宜上传)
+*.pt                     # 另一个 PyTorch 模型文件后缀
+*.onnx                   # ONNX 格式的模型文件 (可能很大)
+*.ckpt                   # PyTorch Lightning 或 Checkpoint 文件
+saved_models/            # 存放模型权重的文件夹，通常也很大
+runs/                    # TensorBoard logs (例如由 PyTorch Lightning, Keras, TensorBoardX 生成)
+
+
+# -------------------------------------------------------------
+# 3. 其他常见项目输出 (Other Common Project Outputs)
+# -------------------------------------------------------------
+output/                  # 通用的输出文件夹
+results/                 # 通用的结果文件夹
+temp/                    # 通用的临时文件夹
+uploads/                 # 如果有上传文件的功能
+
+# -------------------------------------------------------------
+# 4. 自定义 `mydl` 包相关 (Custom `mydl` Package Specific)
+# -------------------------------------------------------------
+# 如果你的 `mydl/data` 文件夹包含大型预训练词向量文件 (vec.txt)，
+# 且这些文件不适合直接上传到GitHub，你可以在 `mydl/data/` 内部放置一个 `.gitignore`
+# 或者在这里明确忽略
+mydl/mydl/data/*

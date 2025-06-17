@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: mydl
+Version: 0.1.0
+Requires-Dist: torch
+Requires-Dist: numpy
+Dynamic: requires-dist
